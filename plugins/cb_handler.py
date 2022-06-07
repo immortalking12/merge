@@ -180,7 +180,7 @@ async def cb_handler(c: Client, cb: CallbackQuery):
                 cb.message.chat.id, filters=filters.text, timeout=60
             )
             if res.text:
-                new_file_name = f"./downloads/{str(cb.from_user.id)}/{res.text.replace(' ','_')}.mkv"
+                new_file_name = f"./downloads/{str(cb.from_user.id)}/{res.text.replace(' ','_')}.mp4"
                 await res.delete(True)
                 await mergeNow(c, cb, new_file_name)
             return
@@ -194,13 +194,13 @@ async def cb_handler(c: Client, cb: CallbackQuery):
     elif cb.data.startswith("renameS_"):
         if "YES" in cb.data:
             await cb.message.edit(
-                "Current filename: **[@TheSerialZone]_softmuxed_video.mkv**\n\nSend me new file name without extension: You have 1 minute"
+                "Current filename: **[@TheSerialZone]_softmuxed_video.mp4**\n\nSend me new file name without extension: You have 1 minute"
             )
             res: Message = await c.listen(
                 cb.message.chat.id, filters=filters.text, timeout=300
             )
             if res.text:
-                new_file_name = f"./downloads/{str(cb.from_user.id)}/{res.text.replace(' ','.')}.mkv"
+                new_file_name = f"./downloads/{str(cb.from_user.id)}/{res.text.replace(' ','.')}.mp4"
                 await res.delete(True)
                 await mergeSub(c, cb, new_file_name)
         if "NO" in cb.data:
