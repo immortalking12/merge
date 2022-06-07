@@ -145,7 +145,7 @@ async def start_handler(c: Client, m: Message):
         )
         if await database.allowedUser(uid=m.from_user.id) is False:
             res = await m.reply_text(
-                text=f"Hi **{m.from_user.first_name}**\n\n 🛡️ Unfortunately you can't use me\n\n**Contact: 🈲 @{Config.OWNER_USERNAME}** ",
+                text=f"Hi **{m.from_user.first_name}**\n\n 🛡️ Hello, Dear User This Bot is Only For Premium Users... Ask @{Config.OWNER_USERNAME}** ",
                 quote=True,
             )
             return
@@ -160,7 +160,7 @@ async def video_handler(c: Client, m: Message):
     if m.from_user.id != Config.OWNER:
         if await database.allowedUser(uid=m.from_user.id) is False:
             res = await m.reply_text(
-                text=f"Hi **{m.from_user.first_name}**\n\n 🛡️ Unfortunately you can't use me\n\n**Contact: 🈲 @{Config.OWNER_USERNAME}** ",
+                text=f"Hi **{m.from_user.first_name}**\n\n 🛡️ Hello, Dear User This Bot is Only For Premium Users... Ask @{Config.OWNER_USERNAME}** ",
                 quote=True,
             )
             return
@@ -300,14 +300,14 @@ async def about_handler(c: Client, m: Message):
     await m.reply_text(
         text="""
 - **WHAT'S NEW:**
-+ Upload to drive using your own rclone config
-+ Merged video preserves all streams of the first video you send (i.e. all audiotracks/subtitles)
++ Merge Upto 
++ 
 - **FEATURES:**
 + Merge Upto 10 videos in one
 + Upload as document/video
 + Custom thumbnail support
 + Users can login to bot using password
-+ Owner can broadcast message to all users
++ Owner can broadcast message
 		""",
         quote=True,
         reply_markup=InlineKeyboardMarkup(
