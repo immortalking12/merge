@@ -71,7 +71,7 @@ async def allowUser(c: Client, m: Message):
             )
         else:
             await m.reply_text(
-                text=f"**Login failed ❌,**\n  🛡️ Unfortunately you can't use me\n\nContact: 🈲 @{Config.OWNER_USERNAME}",
+                text=f"**Login failed ❌,**\n  🛡️ Unfortunately you can't use me Premium\n\nContact: 🈲 @{Config.OWNER_USERNAME}",
                 quote=True,
             )
     return
@@ -266,7 +266,7 @@ async def photo_handler(c: Client, m: Message):
     if m.from_user.id != Config.OWNER:
         if await database.allowedUser(uid=m.from_user.id) is False:
             res = await m.reply_text(
-                text=f"Hi **{m.from_user.first_name}**\n\n 🛡️ Unfortunately you can't use me\n\n**Contact: 🈲 @{Config.OWNER_USERNAME}** ",
+                text=f"Hi **{m.from_user.first_name}**\n\n 🛡️ Unfortunately you can't use me premium\n\n**Contact: 🈲 @{Config.OWNER_USERNAME}** ",
                 quote=True,
             )
             return
@@ -300,22 +300,22 @@ async def about_handler(c: Client, m: Message):
     await m.reply_text(
         text="""
 - **WHAT'S NEW:**
-+ Merge Upto 
-+ 
++ Merge Upto 15 videos
++ Fixed Minor Updates
 - **FEATURES:**
 + Merge Upto 10 videos in one
 + Upload as document/video
 + Custom thumbnail support
-+ Users can login to bot using password
-+ Owner can broadcast message
++ Users can use bot
++ Premium Bot
 		""",
         quote=True,
         reply_markup=InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton("Developer", url="https://t.me/yashoswalyo")],
+                [InlineKeyboardButton("Developer", url="https://t.me/ImortalKingTG")],
                 [
                     InlineKeyboardButton(
-                        "Source Code", url="https://github.com/yashoswalyo/MERGE-BOT"
+                        "Support Channel", url="https://t.me/TheSerialZone"
                     ),
                     InlineKeyboardButton(
                         "Deployed By", url=f"https://t.me/{Config.OWNER_USERNAME}"
