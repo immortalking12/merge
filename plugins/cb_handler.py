@@ -23,9 +23,9 @@ async def cb_handler(c: Client, cb: CallbackQuery):
                 [
                     [
                         InlineKeyboardButton(
-                            "📤 To Telegram", callback_data="to_telegram"
+                            "📱 To Telegram", callback_data="to_telegram"
                         ),
-                        InlineKeyboardButton("Coming Soon Drive Support", callback_data="to_drive"),
+                        InlineKeyboardButton("💾 To Drive", callback_data="to_drive"),
                     ],
                     [InlineKeyboardButton("⛔ Cancel ⛔", callback_data="cancel")],
                 ]
