@@ -301,7 +301,7 @@ async def about_handler(c: Client, m: Message):
         text="""
 - **WHAT'S NEW:**
 + Merge Upto 15 videos
-+ Fixed Minor Glitch Fixed
++ Fixed Minor Glitches
 - **FEATURES:**
 + Merge Upto 10 videos in one
 + Upload as document/video
