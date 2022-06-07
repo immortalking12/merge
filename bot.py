@@ -283,14 +283,14 @@ async def help_msg(c: Client, m: Message):
     await m.reply_text(
         text="""**Follow These Steps:
 
-1) Send me the custom thumbnail (optional).
+1) Send me the custom thumbnail).
 2) Send two or more Your Videos Which you want to merge
 3) After sending all files select merge options
 4) Select the upload mode.
 5) Select rename if you want to give custom file name else press default**""",
         quote=True,
         reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton("Close 🔐", callback_data="close")]]
+            [[InlineKeyboardButton("Close 💥", callback_data="close")]]
         ),
     )
 
@@ -301,13 +301,13 @@ async def about_handler(c: Client, m: Message):
         text="""
 - **WHAT'S NEW:**
 + Merge Upto 15 videos
-+ Fixed Minor Updates
++ Fixed Minor Glitch Fixed
 - **FEATURES:**
 + Merge Upto 10 videos in one
 + Upload as document/video
 + Custom thumbnail support
-+ Users can use bot
-+ Premium Bot
++ Upload As .Mp4 format
+  @ImortalKingTG 
 		""",
         quote=True,
         reply_markup=InlineKeyboardMarkup(
