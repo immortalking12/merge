@@ -300,7 +300,7 @@ async def about_handler(c: Client, m: Message):
     await m.reply_text(
         text="""
 - **WHAT'S NEW:**
-+ Merge Upto 15 videos
++ Google Drive Support Added
 + Fixed Minor Glitches
 - **FEATURES:**
 + Merge Upto 10 videos in one
