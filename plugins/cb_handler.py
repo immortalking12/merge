@@ -56,7 +56,7 @@ async def cb_handler(c: Client, cb: CallbackQuery):
                 message=urc, file_name=f"userdata/{cb.from_user.id}/rclone.conf"
             )
         except Exception as err:
-            await cb.message.reply_text("Rclone not Found, Unable to upload to drive")
+            await cb.message.reply_text("Rclone not Found, If you want To Upload on drive contact @ImortalkingTG")
         if os.path.exists(f"userdata/{cb.from_user.id}/rclone.conf") is False:
             await cb.message.delete()
             await delete_all(root=f"downloads/{cb.from_user.id}/")
