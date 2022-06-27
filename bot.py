@@ -289,7 +289,7 @@ async def help_msg(c: Client, m: Message):
 ★ Price: 49₹ | 2$ ( For 1 month)
 ★ For 2 month: 89₹ | 3$
 ★ For 6 Month: 199₹ | 7$
-IF YOU ARE INTRESTED IN OUR PLAN CONTACT US @TheTechKingTG**""",
+IF YOU ARE INTRESTED IN OUR PLAN CONTACT US @ImortalKingTG**""",
         quote=True,
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("Close 💥", callback_data="close")]]
