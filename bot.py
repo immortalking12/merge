@@ -283,13 +283,13 @@ async def help_msg(c: Client, m: Message):
     await m.reply_text(
         text="""**𝙏𝙝𝙖𝙣𝙠𝙨 𝙛𝙤𝙧 𝙨𝙝𝙤𝙬𝙞𝙣𝙜 𝙞𝙣𝙩𝙚𝙧𝙚𝙨𝙩 𝙞𝙣 PREMIUM
  
-  📝 About Premium:      
+📝 About Premium:      
  
- ★ Nothing New things . You need to pay for access this bot
-
-3) After sending all files select merge options
-4) Select the upload mode.
-5) Select rename if you want to give custom file name else press default**""",
+★ Nothing New things . You need to pay for access this bot
+★ Price: 49₹ | 2$ ( For 1 month)
+★ For 2 month: 89₹ | 3$
+★ For 6 Month: 199₹ | 7$
+IF YOU ARE INTRESTED IN OUR PLAN CONTACT US @TheTechKingTG**""",
         quote=True,
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("Close 💥", callback_data="close")]]
