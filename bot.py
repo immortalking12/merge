@@ -281,10 +281,12 @@ async def photo_handler(c: Client, m: Message):
 @mergeApp.on_message(filters.command(["plan"]) & filters.private)
 async def help_msg(c: Client, m: Message):
     await m.reply_text(
-        text="""**Follow These Steps:
+        text="""**𝙏𝙝𝙖𝙣𝙠𝙨 𝙛𝙤𝙧 𝙨𝙝𝙤𝙬𝙞𝙣𝙜 𝙞𝙣𝙩𝙚𝙧𝙚𝙨𝙩 𝙞𝙣 PREMIUM
+ 
+  📝 About Premium:      
+ 
+ ★ Nothing New things . You need to pay for access this bot
 
-1) Send me the custom thumbnail).
-2) Send two or more Your Videos Which you want to merge
 3) After sending all files select merge options
 4) Select the upload mode.
 5) Select rename if you want to give custom file name else press default**""",
