@@ -295,7 +295,7 @@ async def help_msg(c: Client, m: Message):
     )
 
 
-@mergeApp.on_message(filters.command(["about"]) & filters.private)
+@mergeApp.on_message(filters.command(["plan"]) & filters.private)
 async def about_handler(c: Client, m: Message):
     await m.reply_text(
         text="""
