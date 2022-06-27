@@ -278,7 +278,7 @@ async def photo_handler(c: Client, m: Message):
     await msg.edit_text(text="✅ Custom Thumbnail Saved!")
 
 
-@mergeApp.on_message(filters.command(["help"]) & filters.private)
+@mergeApp.on_message(filters.command(["plan"]) & filters.private)
 async def help_msg(c: Client, m: Message):
     await m.reply_text(
         text="""**Follow These Steps:
