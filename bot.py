@@ -302,13 +302,13 @@ async def about_handler(c: Client, m: Message):
     await m.reply_text(
         text="""
 - **WHAT'S NEW:**
-+ Google Drive Support Added
++ Plan details added
 + Fixed Minor Glitches
 - **FEATURES:**
 + Merge Upto 10 videos in one
 + Upload as document/video
 + Custom thumbnail support
-+ Upload As .Mp4 format
++ Google Drive Support Added
   @ImortalKingTG 
 		""",
         quote=True,
